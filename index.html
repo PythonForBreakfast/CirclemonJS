@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Circlemon JS</title>
+        <link rel="stylesheet" href="circlemonjs.css" type="text/css" />
+        
+    </head>
+    <body>
+        <div id="main">
+            <div id="gameBoard">
+                <img id="logo" src="logo.png" />
+                <div id="winLoss">
+                    <img id="defeat" src="defeat.png" />
+                    <img id="victory" src="victory.png" />
+                </div>
+                <button id="playButton" onClick="loadGame()">Play</button>
+                <div id="outterWindow">
+                    <div id="statusBar"><span id="status"></span></div>
+                    <div id="window">
+                        <div id="mainMenuPlayerImage"></div>
+                        <div id="windowBox"> 
+                            <div id="innerWindowBox">
+                                <div id="monsterHealthWrapper">
+                                    Monster
+                                    <div id="monsterHealthBar">
+                                        <div id="monsterHealth"></div>
+                                        <span id="monsterHealthPoints">50 / 50</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="innerWindowBox">
+                                <div id="monsterImage"></div>
+                            </div>
+
+                            <div id="innerWindowBox">
+                                <div id="playerImage"></div>
+                            </div>
+                            <div id="innerWindowBox">
+                                <div id="playerHealthWrapper">
+                                    Player
+                                    <div id="playerHealthBar">
+                                        <div id="playerHealth"></div>
+                                        <span id="healthPoints">50 / 50</span>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div id="inventoryBar">
+                        <div id="inventory">
+                            <div id="potions"></div>
+                            <div>
+                                <div id="goldCoin"></div>
+                                <span id="gold">test</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mainMenu">
+                    <div id="menuOptions">
+                        <button onClick="menu('fight')">Fight Monster</button>
+                        <button onClick="menu('buyPotion')">Buy Potion</button>
+                    </div>
+                </div>
+                <div id="battleMenu">
+                    <div id="healthBars"></div>
+                    <div id="battleOptions">
+                        <button onClick="attack()">Attack</button>
+                        <button onClick="drinkPotion()">Drink Potion</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="circlemonjs.js"></script>
+    </body>
+</html>
